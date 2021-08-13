@@ -28,7 +28,7 @@ const getPostRequest = () => {
       })
         .then((response) => response.json())
         .then((data) => {
-          dispatch(getPostSuccess(data));
+          dispatch(getPostSuccess(data)); 
         })
         .catch((error) => {
           const errorMessage = error.message;
